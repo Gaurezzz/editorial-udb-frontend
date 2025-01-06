@@ -1,0 +1,160 @@
+/* Estilos base */
+.SectionTextoEditorial {
+    padding-top: 3rem; /* Ajustado */
+}
+
+.hojita1 {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 2;
+}
+
+.hojita2 {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+#carousel-editorial {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 50px; /* Espacio reservado para los botones */
+}
+
+#diapos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    align-items: stretch;
+}
+
+.image-slide {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.slide1 .content {
+    margin: 0 1rem;
+}
+
+.content h2 {
+    font-size: 25px;
+}
+
+#carousel-editorial .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
+#carousel-editorial .carousel-indicators button {
+    background-color: #91BBDE; 
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 15px;
+}
+
+#carousel-editorial .carousel-indicators .active {
+    background-color: #0C65AF; 
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 15px;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media Queries para responsividad */
+
+/* Dispositivos grandes (pantallas mayores a 1200px) */
+@media (min-width: 1200px) {
+    #diapos {
+        height: 430px;
+    }
+
+    .slide1 .content {
+        margin: 0 175px;
+    }
+
+    .content h3 {
+        font-size: 25px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (pantallas entre 768px y 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #diapos {
+        height: 380px;
+    }
+
+    .slide1 .content {
+        margin: 0 50px;
+    }
+
+    .content h3 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+/* Smartphones (pantallas menores a 768px) */
+@media (max-width: 767px) {
+    #diapos {
+        height: auto;
+    }
+
+    .hojita1, .hojita2 {
+        display: none; /* Ocultar decoraciones en pantallas pequeñas */
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    #carousel-editorial .carousel-indicators {
+        bottom: 0; /* Asegura que los botones estén siempre al final del carrusel en móviles */
+    }
+}

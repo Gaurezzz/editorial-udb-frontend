@@ -1,0 +1,113 @@
+/* Estilos generales */
+.footer {
+  background-color: #0c64af; /* Color de fondo */
+  color: #ffffff;
+  padding: 40px 20px 20px 20px; /* Aumentar el padding superior */
+  font-family: "Montserrat", sans-serif;
+}
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo img {
+    width: 250px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .footer-title {
+    font-size: 1.5em; /* Tamaño de letra para el título principal */
+    font-weight: bold;
+  }
+  
+  .footer-info p {
+    font-size: 0.9em; /* Tamaño de letra para la dirección */
+    line-height: 1.5;
+    margin: 0;
+    font-size: medium;
+    
+  }
+  .footer-links ul {
+    list-style: none;
+    font-size: 0.7rem; /* Tamaño de letra para los enlaces */
+    color: #b2cee5;
+  }
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-contact .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em; /* Tamaño de letra para los elementos de contacto */
+    margin-bottom: 5px;
+  }
+  
+  .footer-contact .icon {
+    font-size: 1.2em; /* Tamaño de íconos */
+    margin-right: 5px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em; /* Tamaño de letra para los derechos reservados */
+    color: #b2cee5;;
+  }
+  
+  .footer-contact .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-contact .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-contact .social-icon img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Media queries para tablets */
+@media (max-width: 768px) {
+  .footer-info,
+  .footer-links ul,
+  .footer-contact {
+      text-align: center;
+  }
+
+  .footer-links ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .footer-contact .social-icons {
+      justify-content: center;
+  }
+}
+
+/* Media queries para móviles */
+@media (max-width: 480px) {
+  .footer-info,
+  .footer-links ul,
+  .footer-contact {
+      text-align: center;
+  }
+
+  .footer-links ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .footer-contact .social-icons {
+      justify-content: center;
+  }
+}
+  
+ 

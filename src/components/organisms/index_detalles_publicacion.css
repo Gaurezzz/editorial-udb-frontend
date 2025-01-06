@@ -1,0 +1,58 @@
+
+.tittleDetalles{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0c64af;
+    margin-bottom: 1rem;
+}
+.detallespublicacion {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px 60px;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    padding: 12px 24px;
+    border: 1px solid #0c64af;
+    border-radius: 20px;
+    color: #23408b;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    min-width: 180px;
+    text-align: center;
+}
+.button:hover {
+    background-color: #0c64af;
+    color: #ffffff;
+}
+/* Posicionamiento del botón específico "Consejo Editorial" */
+.consejo-editorial {
+    grid-column: 2; /* Coloca el botón en la segunda columna */
+}
+
+
+@media (max-width: 825px) {
+    .button-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
