@@ -1,0 +1,193 @@
+/* Estilos para la sección de columnas */
+.columnas-seccion {
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-columnas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 349px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    text-align: center;
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.columna p {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.columna-img {
+    width: 222.57px;
+    height: 105.37px;
+    object-fit: cover;
+}
+
+/* Responsive para columnas */
+@media (max-width: 1600px) {
+    .contenedor-columnas {
+        margin: 0 240px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contenedor-columnas {
+        margin: 0 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contenedor-columnas {
+        margin: 0 120px;
+        gap: 20px;
+    }
+
+    .columna {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-columnas {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-columnas {
+        margin: 0 60px;
+    }
+
+    .columna {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-columnas {
+        margin: 0 30px;
+    }
+
+    .columna-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.columna:nth-child(4) .columna-img {
+    margin-top: 34px;
+}
+
+@media (max-width: 992px) {
+    .columna:nth-child(4) .columna-img {
+        margin-top: 0;
+    }
+}
+
+/* Nelson Rectangles - Modificaciones solicitadas */
+.nelson-rectangle {
+    width: 214px !important;
+    height: 64px !important;
+    background: white;
+    border: 1px solid #0C65AF;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0C65AF;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Previene reducción de tamaño */
+}
+
+/* Eliminar subrayado en enlaces */
+.seccion-contenido a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.seccion-contenido a:hover,
+.seccion-contenido a:focus {
+    text-decoration: none !important;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Asegurar tamaño consistente en móviles */
+@media (max-width: 768px) {
+    .nelson-rectangle {
+        width: 214px !important;
+        height: 64px !important;
+        margin: 10px auto; /* Centrado en móviles */
+    }
+}
+
+/* Eliminar efectos no deseados al hacer clic */
+.nelson-rectangle:active,
+.nelson-rectangle:focus {
+    transform: none;
+    outline: none;
+}
+
+/* En la sección principal */
+.seccion-contenido {
+    padding: 75px 400px 40px 400px; /* Añadido 40px abajo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Ajustar todos los breakpoints para mantener el espacio inferior */
+@media (max-width: 1600px) {
+    .seccion-contenido {
+        padding: 75px 240px 30px 240px; /* 30px abajo */
+    }
+}
+
+@media (max-width: 1200px) {
+    .seccion-contenido {
+        padding: 50px 200px 25px 200px; /* 25px abajo */
+    }
+}
+
+@media (max-width: 992px) {
+    .seccion-contenido {
+        padding: 50px 120px 20px 120px; /* 20px abajo */
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-contenido {
+        padding: 30px 100px 15px 100px; /* 15px abajo */
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-contenido {
+        padding: 25px 60px 15px 60px; /* 15px abajo */
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-contenido {
+        padding: 20px 30px 10px 30px; /* 10px abajo */
+    }
+}
+
+/* Espacio adicional específico para el contenedor de rectangles */
+.seccion-contenido .container {
+    margin-bottom: 2rem; /* 32px de espacio adicional */
+}
+
+@media (max-width: 768px) {
+    .seccion-contenido .container {
+        margin-bottom: 1.5rem; /* 24px en móviles */
+    }
+}

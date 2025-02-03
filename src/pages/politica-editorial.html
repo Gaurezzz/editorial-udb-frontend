@@ -1,177 +1,252 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica y enlaces a recursos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Mantenimiento - Editorial UDB</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background-color: #0c64af;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-        }
+    <title>Navbar Editorial UDB</title>
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../components/css/navbar-menu.css">
+    <!-- Banner -->
+    <link rel="stylesheet" href="../components/css/banner.css">
+    <!-- Contenido -->
+    <link rel="stylesheet" href="../components/css/content-infopage.css">
+    <!-- Bloque -->
+    <link rel="stylesheet" href="../components/css/nelson-rectangles.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="../components/css/footer.css">
 
-        .maintenance-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
 
-        .logo {
-            width: 300px;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #FFD700;
-        }
-
-        .countdown {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .countdown-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #FFD700;
-        }
-
-        .countdown-label {
-            font-size: 0.9rem;
-            color: #b2cee5;
-        }
-
-        .social-icons {
-            margin-top: 2rem;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .social-icon img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s;
-        }
-
-        .social-icon img:hover {
-            transform: scale(1.1);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: 1px solid rgba(178, 206, 229, 0.3);
-            margin-top: auto;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .countdown {
-                grid-template-columns: 1fr 1fr;
-                gap: 1rem;
-            }
-
-            .countdown-number {
-                font-size: 2rem;
-            }
-        }
-    </style>
 </head>
+
 <body>
-<div class="maintenance-container">
-    <img src="../assets/img/Logo Blanco.png" alt="Logo UDB" class="logo">
+<!-- NavBar -->
+<header class="navbar-header">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid gx-1 gx-lg-3">
+            <!-- Sección de Logos
+                 - Padding responsive: ps-3 en móvil, ps-lg-4 en desktop
+                 - Reducción progresiva de tamaño en móviles -->
+            <div class="d-flex align-items-center col-7 col-lg-3 ps-3 ps-lg-4">
+                <a class="navbar-brand d-flex gap-1 gap-lg-2" href="../../pages/index.html">
+                    <img src="../assets/img/Logo_UDB.png" alt="Logo UDB" class="logo-udb">
+                    <img src="../assets/img/Logo_Normal.png" alt="Logo Editorial" class="logo-editorial">
+                </a>
+            </div>
 
-    <h1>Sitio en Mantenimiento</h1>
+            <!-- Controles móviles
+                 - Solo visible en breakpoint menor a lg (991px)
+                 - Alineación a la derecha con espacio reducido -->
+            <div class="d-flex d-lg-none col-5 justify-content-end pe-2">
+                <div class="d-flex align-items-center gap-2">
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
 
-    <h2>Politica editorial</h2>
+            <!-- Contenido colapsable
+                 - Sistema responsivo de 12 columnas de Bootstrap
+                 - Ordenamiento diferente en móvil/desktop -->
+            <div class="collapse navbar-collapse col-lg-9" id="navbarNav">
+                <div class="d-flex flex-column flex-lg-row w-100 align-items-stretch">
+                    <!-- Menú principal
+                         - Centrado vertical y horizontal
+                         - Padding vertical condicional -->
+                    <div class="col-lg-8 d-flex align-items-center justify-content-center py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="revistas.html">Revistas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="colecciones.html">Colecciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="manuales.html">Manuales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="textos-escolares.html">Textos Escolares</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
 
-    <p>Estamos trabajando para mejorar tu experiencia.<br>
-        Volveremos pronto con nuevas características.</p>
-
-    <div class="countdown">
-        <div class="countdown-item">
-            <div class="countdown-number" id="days">00</div>
-            <div class="countdown-label">Días</div>
+                    <!-- Buscador
+                         - Oculto en móviles (d-none d-lg-flex)
+                         - Margen derecho responsivo -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end pe-lg-3">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Buscar...">
+                            <button class="search-button">
+                                <img src="../assets/img/search.png" alt="Buscar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="countdown-item">
-            <div class="countdown-number" id="hours">00</div>
-            <div class="countdown-label">Horas</div>
-        </div>
-        <div class="countdown-item">
-            <div class="countdown-number" id="minutes">00</div>
-            <div class="countdown-label">Minutos</div>
-        </div>
-        <div class="countdown-item">
-            <div class="countdown-number" id="seconds">00</div>
-            <div class="countdown-label">Segundos</div>
-        </div>
-    </div>
+    </nav>
+</header>
 
-    <div class="social-icons">
-        <a href="https://www.facebook.com" class="social-icon">
-            <img src="../assets/img/facebookAmarillo.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com" class="social-icon">
-            <img src="../assets/img/instagramAmarillo.png" alt="Instagram">
-        </a>
+<!-- Banner -->
+<div class="banner-container">
+    <img src="../assets/img/book-banner.jpg" alt="Descripción del banner" class="banner-img">
+    <div class="banner-text">
+        <span class="frase1">Revista</span>
+        <span class="frase2">Teoría y praxis</span>
     </div>
 </div>
 
-<div class="footer-bottom">
-    <p class="footer-bottom-letter">Editorial Universidad Don Bosco. San Salvador, El Salvador. © Derechos Reservados 2024</p>
-</div>
+<!-- Contenido -->
+<section class="seccion-contenido">
+    <h1 class="titulo-seccion">Teoría y Praxis</h1>
+    <br>
+    <p class="texto-contenido"><strong>Enfoque, políticas y alcances de Teoría y Praxis.</strong></p>
+    <p class="texto-contenido"><strong>Teoría y Praxis</strong> es una publicación en el ámbito de las Ciencias Sociales de la Universidad Don Bosco, El Salvador. Recoge y ofrece a la comunidad académica la producción intelectual de la Universidad Don Bosco y de la comunidad académica en general.</p>
 
-<script>
-    // Contador regresivo
-    const countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+    <p class="texto-contenido"><strong>Teoría y Praxis</strong> quiere crear un espacio posible para la simbiosis entre la razón y la realidad, lo intelectual y lo integral y entre la teoría y la praxis. El objetivo primero es ofrecer un espacio académico abierto y plural que permita a los investigadores de diferentes procedencias y disciplinas de las Ciencias Sociales establecer un fructífero intercambio, plasmando así un lugar de discusión abierto y plural. Partiendo de la convicción de que los esfuerzos teóricos no deben estar lejos de la realidad, favorece la presentación de ideas y propuestas que expresen el esfuerzo por indagar acerca de la realidad y la vida humana, poniendo en relieve la relación de la humanidad con lo trascendente, con las demás personas y con el contexto.</p>
 
-    const updateCountdown = () => {
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
+    <p class="texto-contenido">En este propósito, <strong>Teoría y Praxis</strong> abre sus páginas a trabajos elaborados por otros investigadores vinculados al ámbito de las Ciencias Sociales, buscando establecer con ellos un espacio fecundo capaz de generar encuentros, diálogos y creaciones intelectuales.</p>
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <div class="blue-line"></div>
 
-        document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
-        document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
-        document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+    <p class="texto-contenido"><strong>Teoría y Praxis</strong> presenta publicaciones inéditas y revisadas por pares evaluadores externos, y estará indexada en las bases de datos que sustenten su calidad académica. El proceso de revisión por pares está determinado y escrito, y se revisa anualmente. Los Criterios para la evaluación de artículos, accesibles en su página web, determinan este proceso. Un <strong>Comité Internacional de Pares Evaluadores</strong> da sustento a la calidad académica de las publicaciones.</p>
 
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            document.querySelector('.countdown').style.display = 'none';
-        }
-    };
+    <p class="texto-contenido"><strong>Teoría y Praxis</strong> mantiene una política de acceso abierta y libre, por medio del Repositorio de la Universidad Don Bosco, en el cual se la puede encontrar sin restricciones desde su primer número.</p>
 
-    const countdownInterval = setInterval(updateCountdown, 1000);
-    updateCountdown();
-</script>
+    <p class="texto-contenido">Si bien <strong>Teoría y Praxis</strong> asume la responsabilidad de la publicación de artículos académicos, la responsabilidad acerca de sus afirmaciones queda en los autores de los mismos. El idioma oficial de <strong>Teoría y Praxis</strong> es el castellano; sin embargo, el Comité de Redacción podrá autorizar la publicación de artículos en otro idioma.</p>
+
+    <div class="blue-line"></div>
+
+    <p class="texto-contenido">Las Normas de Presentación, publicadas en cada número y de libre acceso en el Repositorio de la Universidad Don Bosco, determinan las condiciones y los tiempos en que deben presentarse los artículos propuestos para su publicación.</p>
+
+    <p class="texto-contenido"><strong>Teoría y Praxis</strong> lleva una política de respeto a los derechos de autor, y reconoce las autorías en forma explícita. Al respecto, se acoge a las condiciones de publicación de Creative Commons <strong>Reconocimiento – Compartirl gual (by-sa)</strong>.</p>
+
+
+</section>
+
+<section class="columnas-seccion">
+    <div class="contenedor-columnas">
+        <div class="columna">
+            <p class="fw-bold">Publicada en:</p>
+            <img src="../assets/img/logo%201.jpg" alt="Publicación" class="columna-img">
+        </div>
+
+        <div class="columna">
+            <p class="fw-bold">Revistas Consorciadas:</p>
+            <img src="../assets/img/logo%202.jpg" alt="Revistas" class="columna-img">
+        </div>
+
+        <div class="columna">
+            <p class="fw-bold">Indexada en:</p>
+            <img src="../assets/img/logo%203.jpg" alt="Indexación" class="columna-img">
+        </div>
+
+        <div class="columna">
+            <img src="../assets/img/logo%204.jpg" alt="Extra" class="columna-img">
+        </div>
+    </div>
+</section>
+
+<section class="seccion-contenido">
+    <div class="container bloque-seccion">
+        <div class="row g-4 justify-content-center">
+            <!-- Fila 1 -->
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/consejo-editorial.html">
+                <div class="nelson-rectangle">
+                    Consejo Editorial
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/politica-editorial.html">
+                <div class="nelson-rectangle">
+                    Política Editorial
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/archivo.html">
+                <div class="nelson-rectangle">
+                    Archivo
+                </div>
+                </a>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/proceso-aceptacion.html">
+                <div class="nelson-rectangle">
+                    Proceso de aceptación
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/normas-publicacion.html">
+                <div class="nelson-rectangle">
+                    Normas de publicación
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="../pages/contacto.html">
+                <div class="nelson-rectangle">
+                    Contacto
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="../assets/img/Logo Blanco.png" alt="Logo UDB">
+        </div>
+
+        <div class="footer-info">
+            <p>Calle a Plan del Pino Km 1 1/2.<br>
+                Ciudadela Don Bosco, Soyapango,<br>
+                El Salvador, CA.</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="revistas.html" class ="text-white">Revistas</a></li>
+                <li><a href="colecciones.html" class ="text-white">Colecciones</a></li>
+                <li><a href="manuales.html" class ="text-white">Manuales</a></li>
+                <li><a href="textos-escolares.html" class ="text-white">Textos escolares</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <div class="contact-item">
+                <span class="icon phone-icon"><img src="../assets/img/phone-call.png" alt="Phone Icon"></span>
+                <span>Teléfono: (503) 2251-8200</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon email-icon"><img src="../assets/img/email.png" alt="Email Icon"></span>
+                <span>editorial@udb.edu.sv</span>
+            </div>
+            <div class="contact-item social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="../assets/img/facebookAmarillo.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="../assets/img/instagramAmarillo.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-bottom-letter">Editorial Universidad Don Bosco. San Salvador, El Salvador. © Derechos Reservados 2022</p>
+    </div>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
