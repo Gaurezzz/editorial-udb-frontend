@@ -1,0 +1,186 @@
+/* NAVBAR-MENU.CSS */
+
+/* ========== ESTILOS GENERALES ========== */
+.navbar-header {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    min-height: 80px;
+    transition: all 0.3s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ========== SECCIÓN DE LOGOS ========== */
+.logo-udb {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.logo-editorial {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+/* ========== MENÚ PRINCIPAL ========== */
+.nav-link {
+    color: #333 !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem !important;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-1px);
+}
+
+/* ========== BUSCADOR ACTUALIZADO ========== */
+.search-container {
+    width: 240px;
+    max-width: 100%;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 12px;
+    padding: 0.4rem 2.5rem 0.4rem 1rem !important;
+    background: transparent;
+    font-size: 0.9rem;
+    height: 36px;
+    width: 100%;
+}
+
+.search-button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.search-button:hover img {
+    opacity: 1;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.search-result-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.search-result-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.search-result-excerpt {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 991px) {
+    .navbar {
+        min-height: 70px;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .logo-udb,
+    .logo-editorial {
+        height: 45px;
+    }
+
+    #navbarNav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem !important;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        gap: 0.5rem !important;
+    }
+
+    .logo-udb,
+    .logo-editorial {
+        height: 40px;
+    }
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    #navbarNav {
+        top: 65px;
+        max-height: calc(100vh - 65px);
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .search-input {
+        font-size: 0.85rem;
+        height: 34px;
+    }
+}

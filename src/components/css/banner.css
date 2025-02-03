@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: clamp(50px, 12.7vh, 136px);
+}
+
+.frase1 {
+    font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: block;
+    line-height: 1.2;
+}
+
+.frase2 {
+    font-size: clamp(2.5rem, 6vw, 4.558rem);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: block;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        height: 50vh;
+        max-height: none;
+    }
+
+    .banner-text {
+        padding: 0 15px;
+        top: 10vh !important;
+    }
+
+    .frase1 {
+        font-size: 1.8rem !important;
+    }
+
+    .frase2 {
+        font-size: 2.8rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        top: 5vh !important;
+    }
+
+    .frase1 {
+        font-size: 1.5rem !important;
+    }
+
+    .frase2 {
+        font-size: 2rem !important;
+    }
+}
