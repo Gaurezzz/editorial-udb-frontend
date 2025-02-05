@@ -1,0 +1,184 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+.librosColecciones{
+    padding-top: 3rem;
+}
+
+.title-container {
+    width: calc(33% - 40px);
+    text-align: center;
+    margin: 0 6px 20px; /* Espaciado similar a las tarjetas */
+}
+
+
+.containerColecciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 0 100px;
+    max-width: 2500px;
+}
+
+.card-wrapper {
+    width: calc(33% - 40px);
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    background: transparent;
+}
+
+.card {
+    display: block;
+    width: 165px;
+    height: 247px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.card-content {
+    margin-left: 15px;
+    max-width: 200px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+/* .card-content p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #555;
+} */
+
+.card-content button {
+    background-color: #ffd800;
+    /* Color amarillo */
+    color: #333;
+    /* Color de texto gris oscuro */
+    font-weight: bold;
+    /* Texto en negrita */
+    border: none;
+    /* Sin borde adicional */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    padding: 8px 16px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transición para el color y el efecto de presionar */
+}
+
+.card-content button:hover {
+    background-color: #f0c800;
+    /* Color amarillo más oscuro en hover */
+}
+
+.card-content button:active {
+    transform: scale(0.95);
+    /* Efecto de presión en el botón */
+}
+
+
+
+.section {
+    display: none;
+    padding: 20px 0;
+}
+
+.section.active {
+    display: block;
+}
+
+.colecciones {
+    position: relative; /* Para que los hijos con position: absolute se posicionen aquí */
+  }
+
+.button-colecciones {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.controls {
+    position: absolute;
+    top: 30px; 
+    right: 30px; 
+    display: flex;
+    gap: 10px;
+    z-index: 1; 
+}
+
+.button-colecciones {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 32px; /* Tamaño de fuente más grande para una flecha más gruesa */
+    user-select: none;
+    transition: transform 0.2s, color 0.3s; /* Añade transición para el movimiento y el color */
+}
+
+.button-colecciones:hover {
+    color: #007BFF; /* Cambia el color de la flecha al pasar el mouse */
+}
+
+.button-colecciones:active {
+    transform: translateX(-5px); /* Mueve la flecha hacia la izquierda al hacer clic */
+}
+
+/* Edito unicamaente la imagen de colecciones que aparece en la porrtada */
+
+.imagen {
+    margin: 0;
+    padding: 0;
+  }
+  
+.imagen img {
+    display: block;      /* Quita espacios extra de elementos en línea */
+    width: 100%;         /* Abarca el 100% del ancho */
+    height: 70vh;        /* Ajusta a 80% de la altura de la ventana */
+    object-fit: cover;   /* Mantiene la proporción al llenar el contenedor */
+  }
+  
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .controls {
+        top: 20px; 
+        right: 50%; 
+        transform: translateX(50%); 
+    }
+    .title-container {
+        width: 100%;
+    }
+    .containerColecciones {
+        padding: 0 20px;
+    }
+    .card-wrapper {
+        width: calc(50% - 20px);
+        margin: 10px 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .controls {
+        top: 150px; /* Ajuste la posición superior para evitar superposición */
+        right: 50%; 
+        transform: translateX(50%); 
+    }
+    .card-wrapper {
+        width: 100%;
+        margin: 10px 0;
+    }}

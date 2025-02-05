@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica y enlaces a recursos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Editorial UDB</title>
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../components/css/navbar-menu.css">
+    <!-- Banner -->
+    <link rel="stylesheet" href="../components/css/banner.css">
+    <!-- Contenido -->
+    <link rel="stylesheet" href="../components/css/content-infopage.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="../components/css/footer.css">
+</head>
+
+<body>
+<!-- NavBar -->
+<header class="navbar-header">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid gx-1 gx-lg-3">
+            <!-- Sección de Logos
+                 - Padding responsive: ps-3 en móvil, ps-lg-4 en desktop
+                 - Reducción progresiva de tamaño en móviles -->
+            <div class="d-flex align-items-center col-7 col-lg-3 ps-3 ps-lg-4">
+                <a class="navbar-brand d-flex gap-1 gap-lg-2" href="../../pages/index.html">
+                    <img src="../assets/img/Logo_UDB.png" alt="Logo UDB" class="logo-udb">
+                    <img src="../assets/img/Logo_Normal.png" alt="Logo Editorial" class="logo-editorial">
+                </a>
+            </div>
+
+            <!-- Controles móviles
+                 - Solo visible en breakpoint menor a lg (991px)
+                 - Alineación a la derecha con espacio reducido -->
+            <div class="d-flex d-lg-none col-5 justify-content-end pe-2">
+                <div class="d-flex align-items-center gap-2">
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenido colapsable
+                 - Sistema responsivo de 12 columnas de Bootstrap
+                 - Ordenamiento diferente en móvil/desktop -->
+            <div class="collapse navbar-collapse col-lg-9" id="navbarNav">
+                <div class="d-flex flex-column flex-lg-row w-100 align-items-stretch">
+                    <!-- Menú principal
+                         - Centrado vertical y horizontal
+                         - Padding vertical condicional -->
+                    <div class="col-lg-8 d-flex align-items-center justify-content-center py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="revistas.html">Revistas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="colecciones.html">Colecciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="manuales.html">Manuales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="textos-escolares.html">Textos Escolares</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Buscador
+                         - Oculto en móviles (d-none d-lg-flex)
+                         - Margen derecho responsivo -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end pe-lg-3">
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Buscar...">
+                            <button class="search-button">
+                                <img src="../assets/img/search.png" alt="Buscar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Banner -->
+<div class="banner-container">
+    <img src="../assets/img/book-banner.jpg" alt="Descripción del banner" class="banner-img">
+    <div class="banner-text">
+        <span class="frase1">Revista</span>
+        <span class="frase2">Teoría y praxis</span>
+    </div>
+</div>
+
+<!-- Contenido -->
+<section class="seccion-contenido">
+    <h1 class="titulo-seccion">Titulo</h1>
+    <p class="texto-contenido">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis mi sed lectus volutpat,
+        at ultrices erat scelerisque. Phasellus facilisis, mauris et interdum varius, tortor erat fermentum ex,
+        eget rhoncus nunc libero ut ex. Sed aliquet lectus vel neque laoreet, sed fermentum elit elementum.
+    </p>
+
+    <div class="blue-line"></div> <!-- Línea azul añadida -->
+
+    <p class="texto-contenido">
+        Integer accumsan velit non felis elementum, nec fermentum neque tincidunt. Aenean tincidunt odio a nunc pharetra,
+        id gravida magna molestie. Donec eget dapibus tortor, at venenatis enim. Duis ac ex lectus. Nulla facilisi.
+    </p>
+
+    <p class="texto-contenido">
+        Vestibulum malesuada neque sit amet magna fermentum, sed tincidunt eros scelerisque. Ut quis varius turpis.
+        Ut sit amet erat convallis, luctus sapien in, varius risus. Cras sit amet orci nec justo feugiat congue.
+    </p>
+
+    <p class="texto-contenido">
+        Suspendisse lacinia, augue at vestibulum scelerisque, urna sem efficitur nisl, eget laoreet odio turpis id libero.
+        Cras lacinia neque sit amet libero tempor, non bibendum eros gravida.
+    </p>
+
+    <p class="texto-contenido">
+        Duis ut nunc id ligula facilisis posuere. Etiam ut magna id erat dignissim tincidunt. Integer consequat auctor justo,
+        in imperdiet neque rhoncus id. Nulla a neque at erat pharetra venenatis in id metus.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="../assets/img/Logo Blanco.png" alt="Logo UDB">
+        </div>
+
+        <div class="footer-info">
+            <p>Calle a Plan del Pino Km 1 1/2.<br>
+                Ciudadela Don Bosco, Soyapango,<br>
+                El Salvador, CA.</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="revistas.html" class ="text-white">Revistas</a></li>
+                <li><a href="colecciones.html" class ="text-white">Colecciones</a></li>
+                <li><a href="manuales.html" class ="text-white">Manuales</a></li>
+                <li><a href="textos-escolares.html" class ="text-white">Textos escolares</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <div class="contact-item">
+                <span class="icon phone-icon"><img src="../assets/img/phone-call.png" alt="Phone Icon"></span>
+                <span>Teléfono: (503) 2251-8200</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon email-icon"><img src="../assets/img/email.png" alt="Email Icon"></span>
+                <span>editorial@udb.edu.sv</span>
+            </div>
+            <div class="contact-item social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="../assets/img/facebookAmarillo.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="../assets/img/instagramAmarillo.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-bottom-letter">Editorial Universidad Don Bosco. San Salvador, El Salvador. © Derechos Reservados 2022</p>
+    </div>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
