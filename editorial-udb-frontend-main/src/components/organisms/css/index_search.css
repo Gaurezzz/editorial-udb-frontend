@@ -1,0 +1,178 @@
+#el-verdadero {
+    font-size: 3.2rem;
+    color: #0c64af;
+    font-weight: bold;
+    line-height: 1.2; /* Incrementa el espacio entre líneas */
+    text-align: center; /* Centra el texto */
+    
+}
+
+#el-verdadero .linea1 {
+    display: block; /* Hace que "El verdadero" esté en su propia línea */
+    white-space: nowrap; /* Evita que las palabras se separen */
+}
+#el-verdadero .linea2 {
+    display: block; /* Hace que "espacio de aprendizaje" esté en su propia línea */
+    white-space: nowrap; /* Evita que las palabras se separen */
+}
+#banner-principal { display: flex; justify-content: center; /* Centra horizontalmente */ align-items: center; /* Centra verticalmente */ padding: 1.8rem; width: 100%; }
+#tranding {
+    flex: 2;
+    max-width: 60%; /* Esto ajusta el ancho de laas card para visualizar mas de ellas*/
+    padding: 1rem;
+}
+
+#index_section01 {
+    margin-top: -10rem; /* Ajusta el margen superior para moverlo más arriba */
+    margin-left: 1.0rem; /* Ajusta el margen izquierdo */
+}
+
+#welcome { flex: 1; max-width: 80%; /* Ajusta el ancho máximo */ text-align: center; /* Centra el contenido */ margin: 0 auto; /* Centra el contenedor horizontalmente */ padding: rem; /* Reduce el relleno interno */ border-radius: 10px; background: none; /* Elimina cualquier fondo adicional */ }
+.container-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajustes responsivos */
+    justify-content: space-around; /* Distribuye el espacio *//* antes tenia spacer-around si se ve raro volver a este */
+    align-items: center; /* Centra verticalmente */
+    gap: 1.0rem; /* Espacio entre secciones */
+    padding: 2rem 0; /* Margen vertical */
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en pantallas pequeñas */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 1rem; /* Espaciado entre las secciones */
+    margin: 2rem 0; /* Margen general del contenedor */
+}
+
+.banner-text {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1.0rem; /* Espacio con el buscador */
+    white-space: nowrap;
+    
+}
+
+.search-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #f1f1f1; /* Fondo claro */
+    padding: 10px 16px; /* Ajusta el relleno */
+    border-radius: 30px; /* Bordes más redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: fit-content; /* Se ajusta automáticamente al contenido */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+.search-container1 input {
+    border: none; /* Sin borde */
+    background: none; /* Fondo transparente */
+    outline: none; /* Sin borde de enfoque */
+    padding: 8px 12px; /* Más relleno para comodidad */
+    flex: 1; /* Ocupa todo el espacio restante */
+    font-size: 20px; /* Texto más grande */
+    color: #333; /* Texto oscuro para mejor visibilidad */
+    width: 200px; /* Tamaño fijo para el input */
+}
+
+.search-container1 input::placeholder {
+    color: #9d9d9d; /* Color del texto del placeholder */
+    font-style: italic; /* Estilo del texto del placeholder */
+}
+
+.search-container1 button {
+    background-color: #0c64af; /* Botón con color principal */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano */
+    padding: 10px; /* Más espacio para el clic */
+    border-radius: 50%; /* Botón circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+.search-container1 button:hover {
+    background-color: #033764; /* Color más oscuro al pasar el ratón */
+}
+
+.searchimg {
+    width: 16px; /* Tamaño más grande del icono */
+    height: 16px;
+    filter: brightness(0) invert(1); /* Asegura que el icono sea visible en fondo oscuro */
+}
+
+
+@media (min-width: 960px) {
+    .search-container1 {
+        max-width: 600px; /* Aumenta el tamaño máximo en pantallas grandes */
+        width: 130%; /* Ajusta el ancho a 50% del contenedor */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 950px) { /* Tablets y móviles */
+    .main-container {
+        flex-direction: column; /* Disposición vertical en pantallas pequeñas */
+    }
+    #banner-principal, #tranding {
+        max-width: 100%; /* Ambas secciones ocupan todo el ancho */
+    }
+
+    #welcome {
+        margin-left: 1rem; /* Reduce el margen para pantallas pequeñas */
+        text-align: center; /* Centra el contenido */
+    }
+
+    #el-verdadero {
+        font-size: 30px; /* Reduce el tamaño de fuente */
+    }
+
+    .banner-text {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .search-container1 {
+        margin-top: 1rem;
+        max-width: 100%; /* Adapta el tamaño a la pantalla */
+    }
+
+    .search-container1 input {
+        font-size: 12px; /* Ajusta el tamaño del texto */
+    }
+
+    .searchimg {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) { /* Teléfonos más pequeños */
+    #el-verdadero {
+        font-size: 25px; /* Reduce aún más el tamaño de fuente */
+    }
+
+    .banner-text {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+
+    .search-container1 {
+        flex-direction: column; /* Coloca el input y el botón en una columna */
+        align-items: stretch;
+        padding: 8px; /* Ajusta el relleno para mayor comodidad */
+    }
+
+    .search-container1 input {
+        margin-bottom: 8px; /* Espaciado entre el input y el botón */
+    }
+
+    .search-container1 button {
+        width: 100%; /* Botón ocupa todo el ancho */
+    }
+}

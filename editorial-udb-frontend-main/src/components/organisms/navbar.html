@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica y enlaces a recursos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Editorial UDB</title>
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../css/navbar-menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.4.0/lunr.stemmer.support.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.4.0/lunr.es.min.js"></script><script src="../js/navbar.js"></script>
+</head>
+
+<body>
+<!-- Cabecera principal -->
+<header class="navbar-header">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid gx-1 gx-lg-3">
+            <!-- Sección de Logos
+                 - Padding responsive: ps-3 en móvil, ps-lg-4 en desktop
+                 - Reducción progresiva de tamaño en móviles -->
+            <div class="d-flex align-items-center col-7 col-lg-3 ps-3 ps-lg-4">
+                <a class="navbar-brand d-flex gap-1 gap-lg-2" href="../../pages/index.html">
+                    <img src="../../assets/img/Logo_UDB.png" alt="Logo UDB" class="logo-udb">
+                    <img src="../../assets/img/Logo_Normal.png" alt="Logo Editorial" class="logo-editorial">
+                </a>
+            </div>
+
+            <!-- Controles móviles
+                 - Solo visible en breakpoint menor a lg (991px)
+                 - Alineación a la derecha con espacio reducido -->
+            <div class="d-flex d-lg-none col-5 justify-content-end pe-2">
+                <div class="d-flex align-items-center gap-2">
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenido colapsable
+                 - Sistema responsivo de 12 columnas de Bootstrap
+                 - Ordenamiento diferente en móvil/desktop -->
+            <div class="collapse navbar-collapse col-lg-9" id="navbarNav">
+                <div class="d-flex flex-column flex-lg-row w-100 align-items-stretch">
+                    <!-- Menú principal
+                         - Centrado vertical y horizontal
+                         - Padding vertical condicional -->
+                    <div class="col-lg-8 d-flex align-items-center justify-content-center py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="../../pages/revistas.html">Revistas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/colecciones.html">Colecciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/manuales.html">Manuales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/textos-escolares.html">Textos Escolares</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Buscador
+                         - Oculto en móviles (d-none d-lg-flex)
+                         - Margen derecho responsivo -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end pe-lg-3">
+                        <form class="search-container" id="searchForm">
+                            <input type="text"
+                                   class="search-input"
+                                   id="searchInput"
+                                   placeholder="Buscar..."
+                                   aria-label="Buscar publicaciones">
+                            <button type="submit" class="search-button">
+                                <img src="../../assets/img/search.png" alt="Buscar">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
