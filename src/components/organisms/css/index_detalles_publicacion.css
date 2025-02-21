@@ -39,9 +39,8 @@
     background-color: #0c64af;
     color: #ffffff;
 }
-/* Posicionamiento del botón específico "Consejo Editorial" */
 .consejo-editorial {
-    grid-column: 2; /* Coloca el botón en la segunda columna */
+    grid-column: 2; 
 }
 
 
