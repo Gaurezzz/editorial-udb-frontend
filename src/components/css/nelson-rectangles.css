@@ -1,4 +1,4 @@
-/* Estilos para la sección de columnas */
+
 .columnas-seccion {
     padding: 40px 0;
     font-family: 'Montserrat', sans-serif;
@@ -89,7 +89,6 @@
     }
 }
 
-/* Nelson Rectangles - Modificaciones solicitadas */
 .nelson-rectangle {
     width: 214px !important;
     height: 64px !important;
@@ -106,10 +105,9 @@
     text-align: center;
     padding: 15px;
     transition: transform 0.3s ease;
-    flex-shrink: 0; /* Previene reducción de tamaño */
+    flex-shrink: 0;
 }
 
-/* Eliminar subrayado en enlaces */
 .seccion-contenido a {
     text-decoration: none !important;
     display: inline-block;
@@ -138,56 +136,54 @@
     outline: none;
 }
 
-/* En la sección principal */
 .seccion-contenido {
-    padding: 75px 400px 40px 400px; /* Añadido 40px abajo */
+    padding: 75px 400px 40px 400px;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Ajustar todos los breakpoints para mantener el espacio inferior */
+
 @media (max-width: 1600px) {
     .seccion-contenido {
-        padding: 75px 240px 30px 240px; /* 30px abajo */
+        padding: 75px 240px 30px 240px;
     }
 }
 
 @media (max-width: 1200px) {
     .seccion-contenido {
-        padding: 50px 200px 25px 200px; /* 25px abajo */
+        padding: 50px 200px 25px 200px; 
     }
 }
 
 @media (max-width: 992px) {
     .seccion-contenido {
-        padding: 50px 120px 20px 120px; /* 20px abajo */
+        padding: 50px 120px 20px 120px; 
     }
 }
 
 @media (max-width: 768px) {
     .seccion-contenido {
-        padding: 30px 100px 15px 100px; /* 15px abajo */
+        padding: 30px 100px 15px 100px;
     }
 }
 
 @media (max-width: 576px) {
     .seccion-contenido {
-        padding: 25px 60px 15px 60px; /* 15px abajo */
+        padding: 25px 60px 15px 60px;
     }
 }
 
 @media (max-width: 480px) {
     .seccion-contenido {
-        padding: 20px 30px 10px 30px; /* 10px abajo */
+        padding: 20px 30px 10px 30px;
     }
 }
 
-/* Espacio adicional específico para el contenedor de rectangles */
 .seccion-contenido .container {
-    margin-bottom: 2rem; /* 32px de espacio adicional */
+    margin-bottom: 2rem; 
 }
 
 @media (max-width: 768px) {
     .seccion-contenido .container {
-        margin-bottom: 1.5rem; /* 24px en móviles */
+        margin-bottom: 1.5rem; 
     }
 }
