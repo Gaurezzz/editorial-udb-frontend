@@ -2,41 +2,41 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 300px; /* Ancho fijo para el cuadro de búsqueda */
-    max-width: 100%; /* Permite que sea responsivo */
-    margin-left: 40px; /* Alinea el contenedor al extremo derecho */
+    width: 300px; 
+    max-width: 100%;
+    margin-left: 40px;
 }
 
 .search-input {
-    border: none; /* Elimina el borde predeterminado */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 0.5rem 2.5rem 0.5rem 1rem; /* Espaciado interno, suficiente para el ícono */
-    background-color: #f5f5f5; /* Color de fondo */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem; 
+    background-color: #f5f5f5;
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .search-button {
     position: absolute;
-    right: 10px; /* Posiciona el ícono dentro del cuadro al final */
-    background: transparent; /* Sin fondo */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cambia el cursor al estilo clic */
+    right: 10px; 
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
     padding: 0;
 }
 
 .search-button img {
-    width: 20px; /* Tamaño del ícono */
+    width: 20px;
     height: 20px;
-    display: block; /* Asegura que la imagen respete el contenedor */
+    display: block;
 }
 
 .search-input:focus {
-    outline: none; /* Elimina el borde azul predeterminado */
-    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3); /* Efecto visual al enfocarse */
+    outline: none; 
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3); 
 }
 
 .search-button:focus {
-    outline: none; /* Evita el contorno en el botón */
+    outline: none; 
 }
 
