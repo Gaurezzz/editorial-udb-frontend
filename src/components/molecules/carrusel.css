@@ -1,4 +1,4 @@
-/* CSS para el carrusel */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
@@ -70,22 +70,21 @@
   }
 }
 
-/* Ajustes para reducir el tamaño del carrusel */
 #tranding .tranding-slider {
-  height: 40rem; /* Reduce la altura total del carrusel */
+  height: 40rem; 
   padding: 1rem 0;
   position: relative;
 }
 
 .tranding-slide {
-  width: 20rem; /* Reduce el ancho de cada diapositiva */
-  height: 20rem; /* Reduce la altura de cada diapositiva */
+  width: 20rem;
+  height: 20rem; 
   position: relative;
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 25rem; /* Ajusta el ancho de la imagen */
-  height: 32rem; /* Ajusta la altura de la imagen */
+  width: 25rem; 
+  height: 32rem; 
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -127,10 +126,10 @@
   display: none;
 }
 
-/* Ajustes para los controles del carrusel */
+
 .tranding-slider-control {
   position: relative;
-  bottom: 4rem; /* Ajustar para acercarlos al carrusel */
+  bottom: 4rem; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +176,7 @@
 
 .tranding-slider-control .slider-arrow {
   background: var(--white);
-  width: 3rem; /* Ajusta el tamaño de las flechas */
+  width: 3rem; 
   height: 3rem;
   border-radius: 50%;
   left: 42%;
@@ -186,7 +185,7 @@
 }
 
 .tranding-slider-control .slider-arrow ion-icon {
-  font-size: 1.8rem; /* Reduce el tamaño del ícono dentro de las flechas */
+  font-size: 1.8rem; 
   color: #222224;
 }
 
@@ -197,41 +196,39 @@
 .tranding-slider-control .swiper-pagination {
   position: relative;
   width: 50rem;
-  bottom: 1rem; /* Ajusta la posición de la paginación */
+  bottom: 1rem;
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-  width: 1.0rem; /* Tamaño más grande */
+  width: 1.0rem;
   height: 1.0rem;
   background: #0c64af;
-  transition: all 0.3s ease; /* Animación para el efecto */
+  transition: all 0.3s ease;
 }
 
-/* Efecto al tocar o pasar el mouse por los botones */
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet:hover {
-  background: #797979; /* Azul al pasar el mouse */
-  transform: scale(1.2); /* Agrandar ligeramente */
+  background: #797979;
+  transform: scale(1.2);
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet:active {
-  background: #797979; /* Azul más oscuro al hacer clic */
-  transform: scale(1.1); /* Reducir ligeramente */
+  background: #797979; 
+  transform: scale(1.1); 
 }
 
-/* Ajustes responsivos para pantallas pequeñas */
 @media (max-width: 500px) {
   #tranding .tranding-slider {
-    height: 25rem; /* Reduce más la altura en pantallas pequeñas */
+    height: 25rem; 
   }
 
   .tranding-slide {
-    width: 18rem !important; /* Ajusta el ancho en móviles */
-    height: 22rem !important; /* Ajusta la altura en móviles */
+    width: 18rem !important; 
+    height: 22rem !important; 
   }
 
   .tranding-slide .tranding-slide-img img {
-    width: 18rem !important; /* Ajusta el ancho de las imágenes en móviles */
-    height: 22rem !important; /* Ajusta la altura de las imágenes en móviles */
+    width: 18rem !important;
+    height: 22rem !important; 
   }
 }
 
