@@ -1,6 +1,6 @@
 /* Estilos base */
 .SectionTextoEditorial {
-    padding-top: 3rem; /* Ajustado */
+    padding-top: 3rem; 
 }
 
 .hojita1 {
@@ -20,7 +20,7 @@
     position: relative;
     width: 100%;
     z-index: 1;
-    padding-bottom: 50px; /* Espacio reservado para los botones */
+    padding-bottom: 50px; 
 }
 
 #diapos {
@@ -155,6 +155,6 @@
     }
 
     #carousel-editorial .carousel-indicators {
-        bottom: 0; /* Asegura que los botones estén siempre al final del carrusel en móviles */
+        bottom: 0;
     }
 }
