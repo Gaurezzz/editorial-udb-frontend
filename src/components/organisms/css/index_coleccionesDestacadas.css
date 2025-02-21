@@ -8,7 +8,7 @@ body {
 
 .bg-custom {
     background-color: #8ecbff;
-    border-radius: 120px 120px 0 0; /* Solo las esquinas superiores curveadas */
+    border-radius: 120px 120px 0 0; 
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -16,13 +16,12 @@ body {
 .section-title {
     color: #0c64af;
     font-weight: bold;
-    font-size: 1.2rem; /* Tamaño de fuente reducido */
-    padding: 10px; /* Reducir el relleno si es necesario */
-    border: 1px solid #0c64af; /* Borde más delgado */
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #0c64af;
     display: inline-block;
     border-radius: 20px;
 }
-
 
 .carousel {
     margin-top: 20px;
@@ -33,17 +32,17 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 0 2px; /* Reducir margen entre los libros */
+    margin: 0 2px;
     padding: 5px;
 }
 
 .book-cover {
-    width: 150px; /* Ajustado según el mockup */
-    height: 210px; /* Ajustado según el mockup */
+    width: 150px;
+    height: 210px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px; /* Espacio para el título */
+    margin-bottom: 20px;
     position: relative;
     z-index: 1;
 }
@@ -57,32 +56,31 @@ body {
 
 .book-card::before {
     content: "";
-    width: 180px; /* Ajustado según el mockup */
-    height: 160px; /* Ajuste de altura para cubrir hasta la línea morada */
-    background-color: #0c64af; /* Fondo azul oscuro */
+    width: 180px;
+    height: 160px;
+    background-color: #0c64af;
     border-radius: 30px;
     position: absolute;
-    top: 80px; /* Ajuste de posición para que inicie en la mitad inferior */
+    top: 80px;
     z-index: 0;
 }
 
 .book-title {
-    color: #0c64af; /* Texto en blanco */
+    color: #0c64af;
     font-weight: bold;
     font-size: 2 rem;
     text-align: center;
-    margin-top: 20px; /* Margen superior ajustado */
+    margin-top: 20px;
     position: relative;
     z-index: 2;
     text-decoration: #0c64af; 
-    text-transform: uppercase;/* Quitar subrayado con !important */
+    text-transform: uppercase;
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 3; /* Asegura que las flechas estén encima de las imágenes */
-    width: 5%; /* Ajusta el tamaño de las flechas */
+    z-index: 3;
+    width: 5%;
 }
 
 .carousel-control-prev-icon,
@@ -91,7 +89,7 @@ body {
 }
 
 .section-siguiente {
-    margin-top: 0; /* Elimina el margen superior de la siguiente sección */
+    margin-top: 0;
 }
 
 .btn-custom {
@@ -107,7 +105,6 @@ body {
 }
 
 .btn-custom:hover {
-    background-color: #ffffff; /* Color de fondo al pasar el cursor */
+    background-color: #ffffff;
     color:#0c64af; 
 }
-
